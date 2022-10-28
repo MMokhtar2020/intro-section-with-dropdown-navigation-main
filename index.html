@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Css Links -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!--End Of Css Links -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet" />
+  <!-- End of Google Fonts -->
+</head>
+
+<body>
+  <header>
+    <div class="overlay" id="overlay"></div>
+    <!-- Logo -->
+    <img src="images/logo.svg" alt="logo" class="logo">
+    <!-- Menu Icon Closed -->
+    <img src="images/icon-menu.svg" alt="menu" class="icon-menu" id="icon-menu" onclick="mySide()">
+    <nav id="nav">
+      <!-- Menu Icon Opened -->
+      <img src="images/icon-close-menu.svg" alt="menu" class="icon-menu-close" id="icon-menu-close" onclick="mySide()">
+      <!--links -->
+      <ul class="links">
+        <li><a href="#" onclick="myFunction()" class="dropbtn">Features<img src="images/icon-arrow-down.svg"
+              alt="arrow-down" class="arrow-down"></a>
+          <!--features sub links -->
+          <ul class="features-sub-links sub" id="features-sub-links">
+            <li><a href="#"><img src="images/icon-todo.svg" alt="todo">Todo List</a></li>
+            <li><a href="#"><img src="images/icon-calendar.svg" alt="todo">Calender</a></li>
+            <li><a href="#"><img src="images/icon-reminders.svg" alt="todo">Reminders</a></li>
+            <li><a href="#"><img src="images/icon-planning.svg" alt="todo">Planning</a></li>
+          </ul>
+        </li>
+        <!--Company sub links -->
+        <li><a href="#" onclick="myFunction2()" class="dropbtn">Company<img src="images/icon-arrow-down.svg"
+              alt="arrow-down" class="arrow-down"></a>
+          <ul class="company-sub-links sub" id="company-sub-links">
+            <li><a href="#"></a>History</li>
+            <li><a href="#"></a>Our Team</li>
+            <li><a href="#"></a>Blog</li>
+          </ul>
+        </li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+        <li class="buttons">
+          <button class="login">Login</button>
+          <Button class="register">Register</Button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="landing">
+    <div class="landing-left">
+      <div class="landing-left-text">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.</p>
+        <button>Learn more</button>
+      </div>
+      <div class="landing-logos">
+        <img src="images/client-databiz.svg" alt="">
+        <img src="images/client-audiophile.svg" alt="">
+        <img src="images/client-meet.svg" alt="">
+        <img src="images/client-maker.svg" alt="">
+      </div>
+    </div>
+    <div class="landing-right">
+      <!-- <img src="images/image-hero-desktop.png" alt=""> -->
+    </div>
+  </section>
+  <!-- Javascript Link -->
+  <script src="javascript/script.js"></script>
+</body>
+
+</html>
